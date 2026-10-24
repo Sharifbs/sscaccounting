@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - SSC Accounting</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen p-6">
+  <div class="max-w-3xl mx-auto bg-slate-800 border border-slate-700 rounded-2xl p-6 shadow-xl">
+    <div class="flex justify-between items-center mb-6">
+      <h1 class="text-xl font-bold text-amber-400 flex items-center gap-2">
+        <i class="fa-solid fa-file-pen"></i> Question & Content Upload Admin Panel
+      </h1>
+      <a href="index.html" class="text-sm bg-slate-700 hover:bg-slate-600 px-3 py-1.5 rounded-lg">Student View</a>
+    </div>
+
+    <form id="uploadForm" onsubmit="handleAdminSubmit(event)" class="space-y-4">
+      <div>
+        <label class="block text-xs text-slate-400 mb-1">অধ্যায় নির্বাচন করুন</label>
+        <select id="adminChapterSelect" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-sm">
+          <option value="1">অধ্যায় ১: হিসাববিজ্ঞান পরিচিতি</option>
+          <option value="2">অধ্যায় ২: লেনদেন</option>
+          <option value="3">অধ্যায় ৩: দুতরফা দাখিলা পদ্ধতি</option>
+          <!-- More options -->
+        </select>
+      </div>
+
+      <div>
+        <label class="block text-xs text-slate-400 mb-1">প্রশ্ন / অংকের উদ্দীপক</label>
+        <textarea id="questionInput" rows="3" required class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-sm" placeholder="প্রশ্ন লিখুন..."></textarea>
+      </div>
+
+      <div>
+        <label class="block text-xs text-slate-400 mb-1">সমাধান / উত্তর</label>
+        <textarea id="answerInput" rows="4" required class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-sm" placeholder="উত্তর বা বিস্তারিত সমাধান লিখুন..."></textarea>
+      </div>
+
+      <button type="submit" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold py-2.5 rounded-lg text-sm transition">
+        কন্টেন্ট যোগ করুন & JSON রফতানি করুন
+      </button>
+    </form>
+
+    <div id="outputArea" class="mt-6 hidden">
+      <h3 class="text-xs font-semibold text-slate-400 mb-1">উৎপন্ন JSON কোড (কপি করে `data/chapter-X.json` এ পেস্ট করুন):</h3>
+      <textarea id="jsonOutput" rows="8" readonly class="w-full font-mono text-xs bg-slate-950 border border-slate-700 rounded-lg p-3 text-emerald-400"></textarea>
+    </div>
+  </div>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>

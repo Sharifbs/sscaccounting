@@ -1,0 +1,14 @@
+[
+  { "id": 1, "title": "অধ্যায় ১: হিসাববিজ্ঞান পরিচিতি", "isFree": true, "totalQuestions": 5 },
+  { "id": 2, "title": "অধ্যায় ২: লেনদেন", "isFree": true, "totalQuestions": 8 },
+  { "id": 3, "title": "অধ্যায় ৩: দুতরফা দাখিলা পদ্ধতি", "isFree": true, "totalQuestions": 6 },
+  { "id": 4, "title": "অধ্যায় ৪: মূলধন ও মুনাফা জাতীয় লেনদেন", "isFree": false, "totalQuestions": 7 },
+  { "id": 5, "title": "অধ্যায় ৫: হিসাব", "isFree": false, "totalQuestions": 5 },
+  { "id": 6, "title": "অধ্যায় ৬: জাবেদা", "isFree": false, "totalQuestions": 10 },
+  { "id": 7, "title": "অধ্যায় ৭: খতিয়ান", "isFree": false, "totalQuestions": 8 },
+  { "id": 8, "title": "অধ্যায় ৮: নগদান বই", "isFree": false, "totalQuestions": 9 },
+  { "id": 9, "title": "অধ্যায় ৯: রেওয়ামিল", "isFree": false, "totalQuestions": 6 },
+  { "id": 10, "title": "অধ্যায় ১০: আর্থিক বিবরণী", "isFree": false, "totalQuestions": 12 },
+  { "id": 11, "title": "অধ্যায় ১১: পণ্যের ক্রয়মূল্য, উৎপাদন ব্যয় ও বিক্রয়মূল্য", "isFree": false, "totalQuestions": 5 },
+  { "id": 12, "title": "অধ্যায় ১২: পারিবারিক ও আত্মকর্মসংস্থানমূলক উদ্যোগের হিসাব", "isFree": false, "totalQuestions": 4 }
+]
